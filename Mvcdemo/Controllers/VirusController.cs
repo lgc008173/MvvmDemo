@@ -9,6 +9,7 @@ namespace Mvcdemo.Controllers
         {
             return View();
         }
+        //[HttpGet("/abc")]
         public IActionResult Create()
         {
             return View();
@@ -16,6 +17,7 @@ namespace Mvcdemo.Controllers
         [HttpPost]
         public IActionResult Create2(Virus virus)
         {
+            //操作数据库
             return View("Create2",virus);
         }
     }
